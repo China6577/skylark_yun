@@ -1,0 +1,188 @@
+/* 声明全局样式和项目的初始化样式 */
+body, h1, h2, h3, h4, p, table, tr, td, ul, li, a, form, input, select, option, textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse; /* 合并边框 */
+}
+
+/* 工具的全局样式 */
+.full-left {
+    float: left !important;
+}
+
+.full-right {
+    float: right !important;
+}
+
+[class*=" el-icon-"], [class^=el-icon-] {
+    font-size: 50px;
+}
+
+.el-carousel__arrow {
+    width: 120px;
+    height: 120px;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background: #ffc210;
+    border-color: #ffc210;
+    border: none;
+}
+
+.el-checkbox__inner:hover {
+    border-color: #9b9b9b;
+}
+
+.el-checkbox__inner {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #9b9b9b;
+    border-radius: 0;
+}
+
+.el-checkbox__inner::after {
+    height: 9px;
+    width: 5px;
+}
+
+.el-checkbox__inner::after {
+    height: 9px;
+    width: 5px;
+}
+
+.el-submenu__icon-arrow::before {
+    content: "";
+}
+
+.el-submenu__title {
+    padding: 0;
+}
+
+.el-menu--popup {
+    min-width: 140px;
+    margin-left: -100px;
+}
+
+
+.geetest_holder.geetest_wind {
+    min-width: 100% !important;
+    margin-top: 20px;
+}
+
+.el-pagination button, .el-pagination span:not([class*=suffix]),
+.el-input--mini,
+.el-pagination__sizes .el-input .el-input__inner,
+.el-pager li {
+    font-size: 16px;
+}
+
+.course-brief img {
+    width: 100%;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.el-icon-minus, .el-icon-plus {
+    font-size: 12px;
+}
+
+
+.el-pagination button, .el-pagination span:not([class*=suffix]),
+.el-input--mini,
+.el-pagination__sizes .el-input .el-input__inner,
+.el-pager li {
+    font-size: 16px;
+}
+
+.el-pagination {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.course-brief img {
+    width: 100%;
+}
+
+.el-pagination {
+    display: flex;
+    justify-content: center; /* 让分页组件居中 */
+    padding: 20px 0;
+}
+
+.el-pagination.is-background .el-pager li {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.el-pagination.is-background .el-pager li:hover {
+    background-color: #ffc210;
+    color: #fff;
+    border-color: #ffc210;
+}
+
+.el-pagination.is-background .el-pager li.active {
+    background-color: #fa6240;
+    color: white;
+    border-color: #fa6240;
+}
+
+.el-pagination .el-pagination__prev,
+.el-pagination .el-pagination__next {
+    background-color: #fff;
+    color: #fa6240;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.el-pagination .el-pagination__prev:hover,
+.el-pagination .el-pagination__next:hover {
+    background-color: #fa6240;
+    color: white;
+}
+
+.el-pagination .el-pagination__total,
+.el-pagination .el-pagination__jump {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 调整分页大小选择器 */
+.el-pagination__sizes .el-input__inner {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.el-pagination__sizes:hover .el-input__inner {
+    border-color: #fa6240;
+}
+
+/* 让分页按钮有更好的点击反馈 */
+.el-pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
