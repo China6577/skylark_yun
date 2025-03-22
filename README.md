@@ -63,4 +63,6 @@ npm i axios -S
 npm install vuex@3
 
 ### 感受和体验：
-只是简单的运用Vue和Django框架进行网页的学习，还有很多功能尚未完善，如支付功能等。本项目仅供参考，大家可以借鉴学习。在使用的过程中，skylark_yun\skylark_api\skylark_api\settings\dev.py文件是本地运行配置文件，大家需要根据自己的情况进行配置。如果有什么问题，请随时交流学习，大家共同进步。
+本项目只是简单地运用Vue和Django框架进行网页的学习，还有很多功能尚未完善，如支付功能。
+在使用的过程中，skylark_yun\skylark_api\skylark_api\settings\dev.py文件是本地运行配置文件，大家需要根据自己的情况进行配置。
+如果有什么问题，请随时交流学习，大家共同进步。
