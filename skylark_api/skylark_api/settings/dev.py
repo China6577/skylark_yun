@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'django_ckeditor_5',
     'Order',
     'Coupon',
-    'Payments',
 ]
 
 MIDDLEWARE = [
@@ -492,21 +491,23 @@ SIMPLEUI_CONFIG = {
                     'name': '课程优惠关系',
                     'icon': 'fas fa-link',
                     'url': '/admin/Course/coursepricediscount/'
-                },{
+                },
+                {
                     'name': '课程有效期管理',
                     'icon': 'fas fa-link',
                     'url': '/admin/Course/courseexpire/'
                 },
+                {
+                    'name':'优惠券',
+                    'icon': 'fas fa-link',
+                    'url': '/admin/Coupon/coupon/'
+                },
+                {
+                    'name':'我的优惠券',
+                    'icon': 'fas fa-link',
+                    'url': '/admin/Coupon/usercoupon/'
+                }
             ]
         },
     ],
 }
-
-# 支付宝
-ALIPAY_APP_ID="2021005129699386" # 应用ID
-APLIPAY_APP_NOTIFY_URL = None      # 应用回调地址[支付成功以后,支付宝返回结果到哪一个地址下面]
-ALIPAY_DEBUG = True
-# APIPAY_GATEWAY="https://openapi.alipay.com/gateway.do"
-APIPAY_GATEWAY="https://openapi.alipaydev.com/gateway.do"
-ALIPAY_RETURN_URL = "http://127.0.0.1:8080/success"
-ALIPAY_NOTIFY_URL = "http://127.0.0.1:8080/success"

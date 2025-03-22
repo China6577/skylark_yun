@@ -210,6 +210,7 @@ class Course(BaseModel):
                 "expire_text": item.expire_text,
                 "price": item.price
             })
+
         if self.price > 0:
             # 追加永久有效，永久有效的id默认为0
             data_list.append({"id": 0,

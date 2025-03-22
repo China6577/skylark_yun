@@ -9,7 +9,7 @@ import Register from "../components/Register"
 import Course from "../components/Course"
 import Detail from "../components/Detail"
 import Cart from "@/components/Cart.vue";
-// import AliPlayer from "../components/AliPlayer.vue";
+import UserOrder from "@/components/UserOrder.vue";
 
 Vue.use(Router);
 
@@ -46,6 +46,10 @@ export default new Router({
             path: '/cart',
             name: 'Cart',
             component: Cart,
-        },
+        }, {
+            path: '/order',
+            name: 'UserOrder',
+            component: UserOrder,
+        }
     ]
 })

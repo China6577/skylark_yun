@@ -1,7 +1,7 @@
 <template>
   <div class="cart_item">
     <div class="cart_column column_1">
-      <el-checkbox class="my_el_checkbox" v-model="checked" @change="onCheckboxChange"></el-checkbox>
+      <el-checkbox class="my_el_checkbox" v-model="checked" @change="change_selected"></el-checkbox>
     </div>
     <div class="cart_column column_2">
       <img :src="cart.course_img" alt="">
@@ -51,9 +51,6 @@ export default {
     }
   },
   methods: {
-    onCheckboxChange() {
-      this.change_selected();
-    },
 
     change_selected() {
       let token = localStorage.token || sessionStorage.token;

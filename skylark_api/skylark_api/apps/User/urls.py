@@ -12,4 +12,5 @@ urlpatterns = [
     path('', views.UserAPIView.as_view(), name='user'),
     re_path(r"phone/(?P<phone>1[3-9]\d{9})/", PhoneApiView.as_view(), name='phone'),
     re_path(r"sms/(?P<phone>1[3-9]\d{9})/", views.SMSAPIView.as_view()),
+    re_path(r'(?P<pk>\d+)/orders/',views.UserOrderAPIView.as_view()),
 ]

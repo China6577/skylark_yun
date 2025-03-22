@@ -48,6 +48,8 @@ class UserCoupon(BaseModel):
     @property
     def end_time(self):
         """获取优惠券的过期时间"""
+        if self.coupon.timer == -1:
+            return "9999-99-99 99:99:99"
         start_timestamp = self.start_time.timestamp()
         use_time = self.coupon.timer * 24 * 60 * 60
         end_timestamp = start_timestamp + use_time

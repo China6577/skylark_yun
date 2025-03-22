@@ -1,3 +1,6 @@
+from rest_framework.permissions import IsAuthenticated
+
+from Order.serializers import UserOrderModelSerializer
 from .serializers import CustomTokenObtainSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 
@@ -8,7 +11,7 @@ class CustomTokenObtainPairView(TokenObtainPairView):
     serializer_class = CustomTokenObtainSerializer
 
 
-from rest_framework.generics import CreateAPIView
+from rest_framework.generics import CreateAPIView, RetrieveAPIView
 from .models import User
 from .serializers import UserModelSerializer
 
@@ -72,3 +75,8 @@ class SMSAPIView(APIView):
         except Exception as e:
             logger.error(f"短信发送任务异常！手机号：{phone}，异常信息：{str(e)}")
             return Response({"message": "发送短信失败！"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class UserOrderAPIView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = UserOrderModelSerializer
+    queryset = User.objects.all()
