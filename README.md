@@ -1,18 +1,64 @@
 # skylark_yun
-### 前后端不分离项目
+### 前后端不分离项目:
 
-skylark_yun/  
-   ├── docs/          # 项目相关资料保存目录  
-   ├── skylark_vue/     # 前端项目目录  
-   ├── skylark_api/      # 后端项目目录  
-        ├── logs/          # 项目运行时/开发时日志目录  
-        ├── manage.py  
-        ├── skylark_api/      # 项目主应用，开发时的代码保存  
-        │    ├── apps/      # 开发者的代码保存目录，以模块[子应用]为目录保存  
-        │    ├── libs/      # 第三方类库的保存目录[第三方组件、模块]  
-        │    ├── settings/  
-        │         ├── dev.py   # 项目开发时的本地配置  
-        │         ├── prod.py  # 项目上线时的运行配置  
-        │    ├── urls.py    # 总路由  
-        │    ├── utils/     # 多个模块[子应用]的公共函数类库[自己开发的组件]  
-        └── scripts/       # 保存项目运行时的脚本文件  
+**前端使用WebStorm IDE -> Vue框架**
+
+**后端使用Pycharm IDE -> Django框架**
+
+**数据库使用MySQL和Redis**
+
+
+
+#### 启动指令：
+
+1. 要先启动mysql数据库服务
+
+	2.	还需启动redis服务
+
+3. 注册时后端需要启动celery服务:celery -A mycelery.main worker -l info -P eventlet
+   后端运行指令: python manage.py runserver
+   前端运行指令: npm run serve
+
+
+
+#### 依赖包安装：
+
+**后端：**
+
+pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install djangorestframework -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+pip install PymySQL  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install Pillow  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install django-redis  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install django-cors-headers  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install django-simpleui  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install djangorestframework-simplejwt -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip3 install --upgrade tencentcloud-sdk-python  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip3 install -U "celery[redis]" -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install eventlet -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install django-filter -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+pip install django-ckeditor-5 -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+
+
+
+**前端：**
+
+npm install vue-router@3 -S
+
+npm i element-ui -S
+
+npm i axios -S
+
+npm install vuex@3
