@@ -13,7 +13,7 @@
 
 1. 要先启动mysql数据库服务
 
-	2.	还需启动redis服务
+  还需启动redis服务
 
 3. 注册时后端需要启动celery服务:celery -A mycelery.main worker -l info -P eventlet
    后端运行指令: python manage.py runserver
