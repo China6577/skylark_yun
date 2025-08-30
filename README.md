@@ -23,7 +23,7 @@
 
 **后端：**
 
-在skylark_yun\skylark_api\skylark_api位置进入终端:
+在skylark_yun\skylark_api\skylark_api位置进入终端:  
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
 
 **前端：**
