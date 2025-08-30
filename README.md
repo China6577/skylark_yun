@@ -23,33 +23,8 @@
 
 **后端：**
 
-pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install djangorestframework -i https://pypi.tuna.tsinghua.edu.cn/simple/
-
-pip install PymySQL  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install Pillow  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install django-redis  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install django-cors-headers  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install django-simpleui  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install djangorestframework-simplejwt -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip3 install --upgrade tencentcloud-sdk-python  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip3 install -U "celery[redis]" -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install eventlet -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install django-filter -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-
-pip install django-ckeditor-5 -i https://pypi.tuna.tsinghua.edu.cn/simple/   
-
-
+在skylark_yun\skylark_api\skylark_api位置进入终端:
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
 
 **前端：**
 
